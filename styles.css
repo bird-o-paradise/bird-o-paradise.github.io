@@ -1,0 +1,13 @@
+
+body {
+	background: black;
+	color: white;
+	margin: auto;
+	font-family: monospace;
+}
+
+.content {
+	margin: auto;
+	width: 250px;
+	margin-top: 10%;
+}
