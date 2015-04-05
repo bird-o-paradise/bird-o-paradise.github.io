@@ -23,7 +23,9 @@
 tw-passage {
   color: white;
 	font-family: "Courier new", "american typewriter", monospace;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Front" tags="" position="643,15">Hunt the Wumpus
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Front" tags="" position="643,15">Hunt the Wumpus
 
 A Non-Interactive Birthday Adventure
 
@@ -57,7 +59,73 @@ You can move north, south or west.
 
 [[move north|Pit1]]
 [[move south|bats]]
-[[move west|Second]]</tw-passagedata><tw-passagedata pid="7" name="bats" tags="" position="487,429">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[move west|Second]]</tw-passagedata><tw-passagedata pid="7" name="bats" tags="" position="487,429">Humongous bats pick you up and move you!
+
+[[continue|post_bats]]</tw-passagedata><tw-passagedata pid="8" name="post_bats" tags="" position="487,579">You feel solid rock to the north.
+
+You can move east, south, or west.
+
+[[move east|bats_east]]
+[[move south|bats_south]]
+[[move west|bats_west]]</tw-passagedata><tw-passagedata pid="9" name="bats_east" tags="" position="672,585">You feel a solid wall to the east.
+
+*whoosh* (You feel air rising from a nearby pit).
+*flutter* (You hear bats nearby).
+
+You can move north, south, or west.
+
+[[move north|bats]]
+[[move south|Pit2]]
+[[move west|post_bats]]</tw-passagedata><tw-passagedata pid="10" name="bats_south" tags="" position="485,730">*rustle* *rustle* (You hear bats nearby).
+
+*sniff* (You can smell the Wumpus nearby).
+
+*whoosh* (You feel a draft from a nearby pit).
+
+You can move north, east, south, or west, or fire an arrow.
+
+[[move north|post_bats]]
+[[move east|bat_pit]]
+[[move south|bats]]
+[[move west|wumpus]]
+[[fire arrow|arrow_south]]</tw-passagedata><tw-passagedata pid="11" name="bats_west" tags="" position="298,581">*rustle* *rustle* (You hear bats nearby).
+
+*sniff* (You can smell the Wumpus nearby).
+
+You can move north, east, south, or west, or fire an arrow.
+
+[[move north|bats]]
+[[move east|post_bats]]
+[[move south|wumpus]]
+[[move west|bats]]
+[[fire arrow|arrow_west]]</tw-passagedata><tw-passagedata pid="12" name="wumpus" tags="" position="298,731">You walk right into something huge and hairy. The wumpus roars! You reach for your bow, but it is Too Late. Surprisingly, the wumpus looks like it has something to say.
+
+[[continue|wumpus_talk]]</tw-passagedata><tw-passagedata pid="13" name="arrow_west" tags="" position="95,583">You prepare to fire an arrow!
+
+You can shoot north, east, south, or west.
+
+[[shoot north|miss_west]]
+[[shoot east|miss_west]]
+[[shoot south|hit]]
+[[shoot west|miss_west]]</tw-passagedata><tw-passagedata pid="14" name="miss_west" tags="" position="167,449">You hear a sharp crack in the distance as your arrow strikes solid rock.
+
+[[continue|bats_west]]</tw-passagedata><tw-passagedata pid="15" name="hit" tags="" position="96,731">A wumpus-call pierces the silence of the cave. Your golden-pointed arrow has struck true! Overcome by Lurve, the wumpus runs over.
+
+[[continue|wumpus_talk]]</tw-passagedata><tw-passagedata pid="16" name="wumpus_talk" tags="" position="96,881">&quot;Oh hi there!&quot; the wumpus says. &quot;Happy birthday! Want to go get some tea tomorrow? I know a place. It&#x27;s not like Cambridge, but it&#x27;s the best you can do around here. What do you say?&quot;
+
+
+the end :*</tw-passagedata><tw-passagedata pid="17" name="bat_pit" tags="" position="488,885">As you step forward, the rock crumbles beneath your feet! You reach out and grab a stalagmite just in time. Looking down, you see that you have narrowly escaped falling into a bottomless pit!
+
+[[Phew!|bats_south]]</tw-passagedata><tw-passagedata pid="18" name="arrow_south" tags="" position="355,886">You prepare to fire an arrow!
+
+You can shoot north, east, south, or west.
+
+[[shoot north|miss_south]]
+[[shoot east|miss_south]]
+[[shoot south|miss_south]]
+[[shoot west|hit]]</tw-passagedata><tw-passagedata pid="19" name="miss_south" tags="" position="355,1036">You hear a sharp crack in the distance as your arrow strikes solid rock.
+
+[[continue|bats_south]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">/**
  * @license almond 0.3.0 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
